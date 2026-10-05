@@ -1,3 +1,5 @@
+import { Routes, Route } from 'react-router';
+
 import BasisIntro from './exercises/001-BasisIntro/001-BasisIntro';
 import BasisInstall from './exercises/002-BasisInstall/002-BasisInstall';
 import BasisDevtools from './exercises/003-BasisDevtools/003-BasisDevtools';
@@ -111,123 +113,123 @@ import StylingCssModulesComposesFiles from './exercises/110-StylingCssModulesCom
 import ProjectChecklist from './exercises/111-ProjectChecklist/111-ProjectChecklist';
 import ProjectNotepad from './exercises/112-ProjectNotepad/112-ProjectNotepad';
 
-const Routes = () => {
+function PathsList() {
   return (
-    <>
-      <BasisIntro />
-      <BasisInstall />
-      <BasisDevtools />
-      <BasisComponentWay />
-      <BasisSiteLayout />
-      <BasisComponentResult />
-      <JsxIntro />
-      <JsxReturningNested />
-      <JsxReturningDown />
-      <JsxReturningSeveral />
-      <JsxReturningUnclosed />
-      <JsxReturningEmpty />
-      <JsxVariablesInserting />
-      <JsxVariablesNuances />
-      <JsxVariablesArrays />
-      <JsxVariablesObjects />
-      <JsxVariablesAttributes />
-      <JsxTagsIntro />
-      <JsxTagsSeveral />
-      <JsxTagsMultiLine />
-      <JsxTagsReturn />
-      <JsxTagsClosing />
-      <JsxTagsCorrectness />
-      <JsxRunningCode />
-      <ConditionsIntro />
-      <ConditionsShow />
-      <ConditionsReturn />
-      <ConditionsTernary />
-      <ConditionsLogicalAnd />
-      <ConditionsInverting />
-      <FunctionsIntro />
-      <FunctionsTagsCalling />
-      <FunctionsHandlers />
-      <FunctionsHandlersParams />
-      <FunctionsEventObject />
-      <FunctionsEventObjectParams />
-      <FormingTagsArray />
-      <FormingLoopTagsArray />
-      <FormingTagsArrayData />
-      <FormingArrayKeys />
-      <FormingArrayOfObjects />
-      <FormingUniqueKeysId />
-      <FormingTable />
-      <IdIntro />
-      <IdProblem />
-      <IdRandomStrings />
-      <IdGeneration />
-      <IdFunction />
-      <IdFunctionUsing />
-      <IdFunctionWrongUsing />
-      <StatesIntro />
-      <StatesUsing />
-      <StatesReactivity />
-      <StatesBooleanValue />
-      <StatesCounter />
-      <FormsInputIntro />
-      <FormsInputOutput />
-      <FormsInputFunction />
-      <FormsInputSeveral />
-      <FormsData />
-      <FormsTextarea />
-      <FormsCheckboxIntro />
-      <FormsCheckboxConditionalRendering />
-      <FormsSelectIntro />
-      <FormsSelectArray />
-      <FormsSelectValue />
-      <FormsSelectArrayValue />
-      <FormsRadio />
-      <FormsDefaultValues />
-      <FormsArrayInputsBinding />
-      <FormsObjectInputsBinding />
-      <DataIntro />
-      <DataArrayAdding />
-      <DataArrayOperations />
-      <DataObjectsArrayAdding />
-      <DataObjectsArrayOperations />
-      <DataShowing />
-      <ComponentsIntro />
-      <ComponentsUsing />
-      <ComponentsMultipleInstances />
-      <ComponentsProps />
-      <ComponentsChild />
-      <ComponentsChildArray />
-      <ComponentsChildLoop />
-      <ComponentsPassingStates />
-      <ComponentsPassingId />
-      <ComponentsChangingParentState />
-      <ComponentsEditingParentState />
-      <ComponentsEditingGrandparentState />
-      <ComponentsModesViaStates />
-      <ConceptsIntro />
-      <ConceptsData />
-      <ConceptsComponentsTypes />
-      <ConceptsDataFlow />
-      <ConceptsLiftingStateUp />
-      <ConceptsTruthOneSource />
-      <StylingIntro />
-      <StylingGlobalCss />
-      <StylingObjectToStyle />
-      <StylingCommonFileToStyle />
-      <StylingStylesInStyle />
-      <StylingVariablesToStyle />
-      <StylingStyledComponents />
-      <StylingStyledComponentsProps />
-      <StylingStyledComponentsConditional />
-      <StylingStyledComponentsExtending />
-      <StylingCssModulesStart />
-      <StylingCssModulesFinish />
-      <StylingCssModulesComposesStyles />
-      <StylingCssModulesComposesFiles />
-      <ProjectChecklist />
-      <ProjectNotepad />
-    </>
+    <Routes>
+      <Route path={'/basis/intro'} element={<BasisIntro />} />
+      <Route path={'/basis/install'} element={<BasisInstall />} />
+      <Route path={'/basis/devtools'} element={<BasisDevtools />} />
+      <Route path={'/basis/component-way'} element={<BasisComponentWay />} />
+      <Route path={'/basis/site-layout'} element={<BasisSiteLayout />} />
+      <Route path={'/basis/component-result'} element={<BasisComponentResult />} />
+      <Route path={'/jsx/intro'} element={<JsxIntro />} />
+      <Route path={'/jsx/returning/nested'} element={<JsxReturningNested />} />
+      <Route path={'/jsx/returning/down'} element={<JsxReturningDown />} />
+      <Route path={'/jsx/returning/several'} element={<JsxReturningSeveral />} />
+      <Route path={'/jsx/returning/unclosed'} element={<JsxReturningUnclosed />} />
+      <Route path={'/jsx/returning/empty'} element={<JsxReturningEmpty />} />
+      <Route path={'/jsx/variables/inserting'} element={<JsxVariablesInserting />} />
+      <Route path={'/jsx/variables/nuances'} element={<JsxVariablesNuances />} />
+      <Route path={'/jsx/variables/arrays'} element={<JsxVariablesArrays />} />
+      <Route path={'/jsx/variables/objects'} element={<JsxVariablesObjects />} />
+      <Route path={'/jsx/variables/attributes'} element={<JsxVariablesAttributes />} />
+      <Route path={'/jsx/tags/intro'} element={<JsxTagsIntro />} />
+      <Route path={'/jsx/tags/several'} element={<JsxTagsSeveral />} />
+      <Route path={'/jsx/tags/multi-line'} element={<JsxTagsMultiLine />} />
+      <Route path={'/jsx/tags/return'} element={<JsxTagsReturn />} />
+      <Route path={'/jsx/tags/closing'} element={<JsxTagsClosing />} />
+      <Route path={'/jsx/tags/correctness'} element={<JsxTagsCorrectness />} />
+      <Route path={'/jsx/running-code'} element={<JsxRunningCode />} />
+      <Route path={'/conditions/intro'} element={<ConditionsIntro />} />
+      <Route path={'/conditions/show'} element={<ConditionsShow />} />
+      <Route path={'/conditions/return'} element={<ConditionsReturn />} />
+      <Route path={'/conditions/ternary'} element={<ConditionsTernary />} />
+      <Route path={'/conditions/logical-and'} element={<ConditionsLogicalAnd />} />
+      <Route path={'/conditions/inverting'} element={<ConditionsInverting />} />
+      <Route path={'/functions/intro'} element={<FunctionsIntro />} />
+      <Route path={'/functions/tags-calling'} element={<FunctionsTagsCalling />} />
+      <Route path={'/functions/handlers'} element={<FunctionsHandlers />} />
+      <Route path={'/functions/handlers-params'} element={<FunctionsHandlersParams />} />
+      <Route path={'/functions/event-object'} element={<FunctionsEventObject />} />
+      <Route path={'/functions/event-object-params'} element={<FunctionsEventObjectParams />} />
+      <Route path={'/forming/tags-array'} element={<FormingTagsArray />} />
+      <Route path={'/forming/loop-tags-array'} element={<FormingLoopTagsArray />} />
+      <Route path={'/forming/tags-array-data'} element={<FormingTagsArrayData />} />
+      <Route path={'/forming/array-keys'} element={<FormingArrayKeys />} />
+      <Route path={'/forming/array-of-objects'} element={<FormingArrayOfObjects />} />
+      <Route path={'/forming/unique-keys-id'} element={<FormingUniqueKeysId />} />
+      <Route path={'/forming/table'} element={<FormingTable />} />
+      <Route path={'/id/intro'} element={<IdIntro />} />
+      <Route path={'/id/problem'} element={<IdProblem />} />
+      <Route path={'/id/random-strings'} element={<IdRandomStrings />} />
+      <Route path={'/id/generation'} element={<IdGeneration />} />
+      <Route path={'/id/function'} element={<IdFunction />} />
+      <Route path={'/id/function-using'} element={<IdFunctionUsing />} />
+      <Route path={'/id/function-wrong-using'} element={<IdFunctionWrongUsing />} />
+      <Route path={'/states/intro'} element={<StatesIntro />} />
+      <Route path={'/states/using'} element={<StatesUsing />} />
+      <Route path={'/states/reactivity'} element={<StatesReactivity />} />
+      <Route path={'/states/boolean-value'} element={<StatesBooleanValue />} />
+      <Route path={'/states/counter'} element={<StatesCounter />} />
+      <Route path={'/forms/input/intro'} element={<FormsInputIntro />} />
+      <Route path={'/forms/input/output'} element={<FormsInputOutput />} />
+      <Route path={'/forms/input/function'} element={<FormsInputFunction />} />
+      <Route path={'/forms/input/several'} element={<FormsInputSeveral />} />
+      <Route path={'/forms/data'} element={<FormsData />} />
+      <Route path={'/forms/textarea'} element={<FormsTextarea />} />
+      <Route path={'/forms/checkbox/intro'} element={<FormsCheckboxIntro />} />
+      <Route path={'/forms/checkbox/conditional-rendering'} element={<FormsCheckboxConditionalRendering />} />
+      <Route path={'/forms/select/intro'} element={<FormsSelectIntro />} />
+      <Route path={'/forms/select/array'} element={<FormsSelectArray />} />
+      <Route path={'/forms/select/value'} element={<FormsSelectValue />} />
+      <Route path={'/forms/select/array-value'} element={<FormsSelectArrayValue />} />
+      <Route path={'/forms/radio'} element={<FormsRadio />} />
+      <Route path={'/forms/default-values'} element={<FormsDefaultValues />} />
+      <Route path={'/forms/array-inputs-binding'} element={<FormsArrayInputsBinding />} />
+      <Route path={'/forms/object-inputs-binding'} element={<FormsObjectInputsBinding />} />
+      <Route path={'/data/intro'} element={<DataIntro />} />
+      <Route path={'/data/array-adding'} element={<DataArrayAdding />} />
+      <Route path={'/data/array-operations'} element={<DataArrayOperations />} />
+      <Route path={'/data/objects-array-adding'} element={<DataObjectsArrayAdding />} />
+      <Route path={'/data/objects-array-operations'} element={<DataObjectsArrayOperations />} />
+      <Route path={'/data/showing'} element={<DataShowing />} />
+      <Route path={'/components/intro'} element={<ComponentsIntro />} />
+      <Route path={'/components/using'} element={<ComponentsUsing />} />
+      <Route path={'/components/multiple-instances'} element={<ComponentsMultipleInstances />} />
+      <Route path={'/components/props'} element={<ComponentsProps />} />
+      <Route path={'/components/child'} element={<ComponentsChild />} />
+      <Route path={'/components/child-array'} element={<ComponentsChildArray />} />
+      <Route path={'/components/child-loop'} element={<ComponentsChildLoop />} />
+      <Route path={'/components/passing-states'} element={<ComponentsPassingStates />} />
+      <Route path={'/components/passing-id'} element={<ComponentsPassingId />} />
+      <Route path={'/components/changing-parent-state'} element={<ComponentsChangingParentState />} />
+      <Route path={'/components/editing-parent-state'} element={<ComponentsEditingParentState />} />
+      <Route path={'/components/editing-grandparent-state'} element={<ComponentsEditingGrandparentState />} />
+      <Route path={'/components/modes-via-states'} element={<ComponentsModesViaStates />} />
+      <Route path={'/concepts/intro'} element={<ConceptsIntro />} />
+      <Route path={'/concepts/data'} element={<ConceptsData />} />
+      <Route path={'/concepts/components-types'} element={<ConceptsComponentsTypes />} />
+      <Route path={'/concepts/data-flow'} element={<ConceptsDataFlow />} />
+      <Route path={'/concepts/lifting-state-up'} element={<ConceptsLiftingStateUp />} />
+      <Route path={'/concepts/truth-one-source'} element={<ConceptsTruthOneSource />} />
+      <Route path={'/styling/intro'} element={<StylingIntro />} />
+      <Route path={'/styling/global-css'} element={<StylingGlobalCss />} />
+      <Route path={'/styling/object-to-style'} element={<StylingObjectToStyle />} />
+      <Route path={'/styling/common-file-to-style'} element={<StylingCommonFileToStyle />} />
+      <Route path={'/styling/styles-in-style'} element={<StylingStylesInStyle />} />
+      <Route path={'/styling/variables-to-style'} element={<StylingVariablesToStyle />} />
+      <Route path={'/styling/styled-components'} element={<StylingStyledComponents />} />
+      <Route path={'/styling/styled-components-props'} element={<StylingStyledComponentsProps />} />
+      <Route path={'/styling/styled-components-conditional'} element={<StylingStyledComponentsConditional />} />
+      <Route path={'/styling/styled-components-extending'} element={<StylingStyledComponentsExtending />} />
+      <Route path={'/styling/css-modules-start'} element={<StylingCssModulesStart />} />
+      <Route path={'/styling/css-modules-finish'} element={<StylingCssModulesFinish />} />
+      <Route path={'/styling/css-modules-composes-styles'} element={<StylingCssModulesComposesStyles />} />
+      <Route path={'/styling/css-modules-composes-files'} element={<StylingCssModulesComposesFiles />} />
+      <Route path={'/project/checklist'} element={<ProjectChecklist />} />
+      <Route path={'/project/notepad'} element={<ProjectNotepad />} />
+    </Routes>
   );
-};
+}
 
-export default Routes;
+export default PathsList;
